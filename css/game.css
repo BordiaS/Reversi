@@ -1,0 +1,125 @@
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed!important;
+    background-color: #eab860;
+}
+body {
+  margin: 0;
+  padding: 0;
+  margin-left:-1.4%;
+  width: 105%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed!important;
+    background-color: #eab860;
+}
+/* To prevent long-press that will bring up copy-paste dialog. */
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -moz-touch-callout: none;
+  -ms-touch-callout: none;
+  touch-callout: none;
+  outline: 0; /* To prevent blue-box outline after click: http://stackoverflow.com/questions/21719306/getting-rid-of-a-blue-box-around-button-when-pressed */
+}
+textarea, input {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+}
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+#gameArea {
+  background-color: #eab860;
+  position:absolute; 
+  top:0%; 
+  left:0%;
+  height:95%;
+  width:110%;
+  padding: 0%;
+  overflow: auto;
+  /*margin-left : -1.8%;*/
+}
+
+.r {
+  border-right: 2pt solid black;
+}
+.b {
+  border-bottom: 2pt solid black;
+}
+/*.l{
+  border-left: 2pt solid black;
+}*/
+.u {
+  border-top: 2pt solid black;
+}
+
+
+.slowlyAppear {
+  animation: slowlyAppear 0.5s linear;
+}
+.flipper {
+	transition: 1s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+@keyframes slowlyAppear {
+  from {opacity: 0.1;}
+  to {opacity: 1;}
+}
+#boardArea{
+  position:absolute;
+  margin-left: -50%;
+  left:50.1%;
+  height: 78%;  
+  width: 98%;
+  border:2pt solid black;
+}
+#scoreArea{
+  position:absolute;
+  left: 0;
+  bottom: 3%;
+  height: 10%;
+  width: 95%;
+  margin: 2%;
+  /*border : solid red 5pt;*/
+}
+.playerArea{
+  display:table;
+  height: 100%;
+  width:14%;
+  /*border: solid blue 1pt;*/
+}
+.numberArea{
+  display:table;
+
+  text-align: center;
+  height: 100%;
+  width:14%;
+  /*border: solid yellow 1pt;*/
+  font-size:4vh;
+}
+
+.nubmerDivBlack
+{
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+}
+
+.nubmerDivWhite
+{
+  display: table-cell;
+  vertical-align: middle;
+  color: black;
+}
+
